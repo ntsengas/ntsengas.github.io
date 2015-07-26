@@ -25,7 +25,7 @@
 	</head>
 	<body>
 
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="display: none;">
 		  <div class="container">
 			<div class="navbar-header">
 			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -46,13 +46,13 @@
 		  </div>
 		</nav>
 
-    <div class="container">
-		<div class="starter-template">
-			<h1>Greetings</h1>
-			<p class="lead">This is the Home page.<br>Still operational.</p>
-			<button id="blogSiteBtn" type="button" class="btn btn-link">Blog Site</button>
-		</div>
-    </div>	
+		<div class="container" style="display: none;>
+			<div class="starter-template">
+				<h1>Greetings</h1>
+				<p class="lead">This is the Home page.<br>Still operational.</p>
+				<button id="blogSiteBtn" type="button" class="btn btn-link">Blog Site</button>
+			</div>
+		</div>	
 			
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -60,9 +60,14 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
 		
 		<script>
-		jQuery('#blogSiteBtn').on('click', function() {
+		jQuery(function() {
+			jQuery('#blogSiteBtn').on('click', function() {
+				window.location = "http://determindedcoder.com/vision/";
+			});
 			window.location = "http://determindedcoder.com/vision/";
 		});
+		
+
 		</script>
 	</body>
 </html>
